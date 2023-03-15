@@ -1,0 +1,33 @@
+body{
+    background: #000000;
+    color: white;
+}
+
+
+.slidecontainer {
+    width: 100%;
+}
+  
+.slider{
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    width: 240px;
+    padding: 20px;
+    background-color: #000000;
+}
+
+.slider::-webkit-slider-runnable-track{
+    background-color:white;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    margin-top: -5px;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: #ffffff;
+}

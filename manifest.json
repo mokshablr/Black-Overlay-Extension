@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Black Overlay",
+  "description": "Add a black overlay over your webpages for when you cannot reduce brightness.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+
+      "css": ["contentScript.css"],
+
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
