@@ -6,7 +6,11 @@
   "action": {
     "default_popup": "popup.html"
   },
+  
+  "permissions":["scripting", "tabs"],
+
   "host_permissions": ["<all_urls>"],
+  
   "content_scripts": [
     {
       "js": ["content.js"],
