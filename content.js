@@ -16,6 +16,5 @@ on();
 chrome.runtime.onMessage.addListener(gotMessage);
 
 function gotMessage(message){
-  console.log(message.value);
-  document.getElementById("Black-Overlay").style.opacity = message.value;
+  document.getElementById("Black-Overlay").style.opacity = (1 - message.value); //To change opacity with slider value. Using (1 - value) for UX of lesser value being darker shade.
 }

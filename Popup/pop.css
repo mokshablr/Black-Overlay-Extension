@@ -3,7 +3,6 @@ body{
     color: white;
 }
 
-
 .slidecontainer {
     width: 100%;
 }
@@ -13,7 +12,9 @@ body{
     appearance: none;
     cursor: pointer;
     width: 240px;
-    padding: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: #000000;
 }
 

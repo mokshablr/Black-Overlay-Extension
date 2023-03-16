@@ -4,7 +4,14 @@
   "description": "Add a black overlay over your webpages for when you cannot reduce brightness.",
   "version": "1.0",
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "/Popup/popup.html",
+    "default_icon": "/Assets/logo16.png"
+  },
+
+  "icons":{
+    "16": "/Assets/logo16.png",
+    "48": "/Assets/logo48.png",
+    "128": "/Assets/logo128.png"
   },
   
   "permissions":["scripting", "tabs"],
