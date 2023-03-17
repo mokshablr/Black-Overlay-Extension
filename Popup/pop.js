@@ -1,6 +1,16 @@
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
+var toggle = document.getElementById("overlay-toggle");
+var overlay = document.getElementsByClassName("slidecontainer");
 output.innerHTML = slider.value*100 + "%"; // Display the default slider value
+
+toggle.addEventListener("click", () => {
+  if(toggle.checked){
+    overlay[0].style.display = "none";
+  } else{
+    overlay[0].style.display = "block";
+  }
+})
 
 // Update the current slider value (each time you drag the slider handle)
 slider.oninput = function() {
