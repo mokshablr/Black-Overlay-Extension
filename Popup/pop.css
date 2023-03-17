@@ -3,6 +3,10 @@ body{
     color: white;
 }
 
+#overlay-toggle{
+    accent-color: #000000;
+}
+
 .slidecontainer {
     width: 100%;
 }
