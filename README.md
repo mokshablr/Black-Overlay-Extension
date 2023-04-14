@@ -10,6 +10,7 @@ It's my **first time** using *JavaScript* and creating an extension so it was a 
 ## How to use the extension?
 
 1. Clone this repository! <br>
+
 Using SSH: `git clone git@github.com:mokshablr/Black-Overlay-Extension.git`<br>
 Using HTTP: `https://github.com/mokshablr/Black-Overlay-Extension.git`
 
