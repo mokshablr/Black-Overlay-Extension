@@ -4,17 +4,45 @@ const init= function(){
     injectElement.setAttribute('id', 'Black-Overlay');
     document.body.appendChild(injectElement);
 }
+//Runs on pageload
 init();
 
-function on() {
-    document.getElementById("Black-Overlay").style.display = "block";
-    document.getElementById("Black-Overlay").style.opacity = 0.5;
+let overlay = document.getElementById("Black-Overlay");
+
+// Turn on the overlay
+function on(opacity) {
+    overlay.style.display = "block";
+    overlay.style.opacity = opacity;
 }
-on();
 
+// Turn off the overlay
+function off(){
+  overlay.style.display = "none";
+}
 
+// Listen to messages sent from the popup
 chrome.runtime.onMessage.addListener(gotMessage);
 
+
 function gotMessage(message){
-  document.getElementById("Black-Overlay").style.opacity = (1 - message.value); //To change opacity with slider value. Using (1 - value) for UX of lesser value being darker shade.
+    
+    // To know the current overlay values to render when opening the pop-up.
+    if(message.title === "send-val"){
+        chrome.runtime.sendMessage({
+            value : overlay.style.opacity,
+            displayStyle : overlay.style.display,
+        });
+    }
+
+    // Check the checkbox state.
+    else{
+         if(message.toggle){
+            //To change opacity with slider value. Using (1 - value) for UX of lesser value being darker shade.
+            on((1 - message.value));
+        }
+    
+        else if(!(message.toggle)){
+            off();
+        }
+    }
 }
