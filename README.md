@@ -1,6 +1,9 @@
 
 # Black Overlay Extension
 
+https://github.com/mokshablr/Black-Overlay-Extension/assets/74970809/43480172-c672-4ddd-89bd-bcfb84df020a
+
+
 A chrome extension to create an overlay above all webpages to give the effect of changing brightness. Useful for when viewing bright webpages and the screen's brightness cannot be changed (Eg: An external monitor).
 
 I am a Computer Science Engineering student and spend most of my time studying from my laptop which is connected to an external monitor. Since the external monitor's brightness does not change despite changing it on my laptop, studying from a white PDF for a long time hurts my eyes and that's why I built this extension. 
