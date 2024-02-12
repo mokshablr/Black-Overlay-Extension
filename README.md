@@ -19,7 +19,9 @@ Using HTTP: `https://github.com/mokshablr/Black-Overlay-Extension.git`
 
 2. Go to your browser settings and find extensions. (or type `chrome://extensions` on chrome)
 
-3. Click on "load unpacked" in the top left and select the cloned repository.
+3. Enable "Develoer Mode" if not done already.
+
+4. Click on "load unpacked" in the top left and select the cloned repository.
 
 Great! You should now be able see the "Black Overlay" extension along with your other extensions! Make sure you enable it and then go to any website to see the overlay!
 
